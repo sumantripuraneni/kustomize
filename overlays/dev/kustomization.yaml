@@ -8,6 +8,12 @@ commonLabels:
   env: dev
   cluster: dev-demo
 
+namePrefix: dev-
+
 patches:
 - path: deployment-dev.yaml
 - path: service-dev.yaml
+
+images:
+ - name: nginx
+   newTag: dev
